@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <form id="taskForm">
+        <label for="taskTitle">Título:</label>
+        <input type="text" id="taskTitle" required>
+        <button type="submit">Agregar Tarea</button>
+    </form>
+    <button id="toggleTasks">Ocultar Tareas</button>
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="taskList">
+        </tbody>
+    </table>
+</body>
+</html>
